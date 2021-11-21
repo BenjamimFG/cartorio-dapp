@@ -1,0 +1,57 @@
+.h1 {
+    padding: 30px;
+    color: #6fbbd3;
+}
+
+.form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container-informacao-imovel {
+    background-color: #6fbbd3;
+    border-style: outset;
+    height: 50px;
+    padding: 10px;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: larger;
+    color: #fff;
+}
+
+.img-home {
+    width: 3.5%;
+    padding: 10px;
+}
+
+.container-endereco {
+    padding: 10px;
+    display: flex;
+}
+
+.input-numero {
+    padding-left: 100px;
+}
+
+.container-regiao {
+    padding: 10px;
+    display: flex;
+}
+
+.container-caracteristicas {
+    padding: 10px;
+    display: flex;
+}
+
+.label-data-construcao {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 20px;
+}
+
+.container-pessoa {
+    padding: 10px;
+    display: flex;
+}
