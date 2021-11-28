@@ -1,5 +1,14 @@
 {
+  "scripts": {
+    "dev": "lite-server"
+  },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.3.3"
+    "@openzeppelin/contracts": "^4.3.3",
+    "truffle": "^5.4.22",
+    "truffle-contract": "^4.0.31",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }

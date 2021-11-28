@@ -50,12 +50,28 @@ contract Cartorio is Ownable {
         _;
     }
 
+    function is_owner() public view returns (bool) {
+        return _msgSender() == owner();
+    }
+
     function get_total_casas_venda() public view returns (uint256) {
         return ids_casas_venda.length;
     }
 
     function get_ids_casas_venda() public view returns (uint256[] memory) {
         return ids_casas_venda;
+    }
+
+    function get_casas_venda() public view returns (Casa[] memory) {
+        uint256 total_casas_venda = ids_casas_venda.length;
+        Casa[] memory _casas = new Casa[](total_casas_venda);
+        for (uint256 i = 0; i < total_casas_venda; i++) {
+            uint256 id = ids_casas_venda[i];
+            Casa memory _casa = casas[id];
+            _casas[i] = _casa;
+        }
+
+        return _casas;
     }
 
     function get_casas() public view returns (Casa[] memory) {

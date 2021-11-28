@@ -1,0 +1,57 @@
+main {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#imoveis {
+  text-align: center;
+}
+
+.imovel-info {
+  text-align: start;
+}
+
+.imovel-card {
+  display: flex;
+  border-radius: 10px;
+}
+
+.imovel-card:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.imovel-card .imovel-info {
+  padding: 20px;
+  width: calc(100% - 40px - 200px - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imovel-card .imovel-buttons {
+  display: flex;
+  padding: 20px;
+  width: 190px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imovel-info-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.imovel-info-icons i, .imovel-info-icons .suite-img{
+  margin-right: 5px;
+}
+
+.imovel-card > img {
+  width: 200px;
+}
+
+.suite-img {
+  width: 1.25em;
+  height: 1em;
+}
